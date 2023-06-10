@@ -19,12 +19,12 @@ export const ShoppingPage = () => {
         <ProductCard product={product}>
           <ProductCard.Image />
           <ProductCard.Title title={"Hola mundo"} />
-          {/* <ProductButtons /> */}
+          <ProductButtons />
         </ProductCard>
         <ProductCard product={product}>
           <ProductImage />
           <ProductTitle />
-          {/* <ProductButtons /> */}
+          <ProductButtons />
         </ProductCard>
       </div>
     </div>
