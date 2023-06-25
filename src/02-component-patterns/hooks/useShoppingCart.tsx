@@ -14,21 +14,7 @@ const useShoppingCart = () => {
     product: Product;
   }) => {
     setShoppingCart((oldShopingCart) => {
-      // const productInCart: ProductInCard = oldShopingCart[product.id] || {
-      //   ...product,
-      //   count: 0,
-      // };
 
-      // if (Math.max(productInCart.count + count, 0) > 0) {
-      //   productInCart.count += count;
-      //   return {
-      //     ...oldShopingCart,
-      //     [product.id]: productInCart,
-      //   };
-      // }
-
-      // const { [product.id]: toDelete, ...rest } = oldShopingCart;
-      // return rest;
       const newCart = {
         ...oldShopingCart,
         [product.id]: { ...product, count },
